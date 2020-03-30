@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AB05F2</color>
+    <color name="colorPrimaryDark">#000051</color>
+    <color name="colorAccent">#df78ef</color>
+
+
+
+       <color name="primaryColor">#ab47bc</color>
+       <color name="primaryLightColor">#df78ef</color>
+       <color name="primaryDarkColor">#790e8b</color>
+       <color name="secondaryColor">#1a237e</color>
+       <color name="secondaryLightColor">#534bae</color>
+       <color name="secondaryDarkColor">#000051</color>
+       <color name="primaryTextColor">#ffffff</color>
+       <color name="secondaryTextColor">#ffffff</color>
+
+
+
+    <color name="wowClub1">#AB05F2</color>
+    <color name="wowClub2">#7D07F2</color>
+    <color name="wowClub3">#5207F2</color>
+    <color name="wowClub4">#23D9B7</color>
+    <color name="wowClub5">#D7F205</color>
+
+
+
+
+
+
+</resources>

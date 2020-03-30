@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:checkedButton="@id/radioMale"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/textGender"
+        app:layout_constraintStart_toStartOf="@+id/textGender"
+        app:layout_constraintTop_toBottomOf="@+id/textGender">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_gender_male" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_gender_female" />
+
+        <RadioButton
+            android:id="@+id/radioOutros"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_gender_others" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imageChoosePicture"
+        android:layout_width="136dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@string/text_choose_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/text_profile_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageChoosePicture" />
+
+    <EditText
+        android:id="@+id/editBio"
+        android:layout_width="348dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/text_profile_bio"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonLocation"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonLocation" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/button_save"
+        app:layout_constraintStart_toStartOf="@+id/editBio"
+        app:layout_constraintTop_toBottomOf="@+id/editBio" />
+
+    <Button
+        android:id="@+id/btDeleteAccount"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_delete_account"
+        app:layout_constraintEnd_toEndOf="@+id/btSave"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btSave"
+        app:layout_constraintTop_toBottomOf="@+id/btSave" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="348dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/text_profile_age"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/editName"
+        app:layout_constraintStart_toStartOf="@+id/editName"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="348dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="@string/text_profile_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editEmail"
+        app:layout_constraintStart_toStartOf="@+id/editEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_profile_gender"
+        app:layout_constraintEnd_toEndOf="@+id/editAge"
+        app:layout_constraintStart_toStartOf="@+id/editAge"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/text_profile_location"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupGender"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupGender" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
