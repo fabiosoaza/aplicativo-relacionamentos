@@ -1,12 +1,13 @@
 <resources>
-    <string name="app_name">AulaLayout</string>
-    <string name="text_choose_picture">Toque para alterar imagem</string>
+    <string name="app_name">Tinderino</string>
+    <string name="text_choose_picture">Toque para alterar imagem de perfil</string>
     <string name="text_profile_name">Nome</string>
     <string name="text_profile_email">E-mail</string>
     <string name="text_profile_bio">Bio</string>
+    <string name="text_profile_bio_content_description">Biografia</string>
     <string name="text_profile_age">Idade</string>
     <string name="text_profile_gender">Gênero</string>
-    <string name="text_profile_location">Localização</string>
+    <string name="text_profile_location">Distância</string>
     <string name="button_save">Salvar</string>
     <string name="button_delete_account">Apagar Conta</string>
     <string name="radio_gender_male">Homem</string>
